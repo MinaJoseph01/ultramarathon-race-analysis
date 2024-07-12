@@ -35,4 +35,44 @@ The ultramarathon dataset is a comprehensive collection of race records, includi
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/ultramarathon-race-analysis.git
+   git clone https://github.com/MinaJoseph01/ultramarathon-race-analysis.git
+
+
+
+Key Skills
+Data cleaning and preprocessing
+Data filtering and extraction
+Feature engineering
+Handling missing values and duplicates
+Data visualization with Seaborn
+Tools Used
+Python (Pandas, Seaborn)
+Jupyter Notebook
+Feel free to modify the code and add more visualizations or analyses based on the dataset. Contributions and feedback are welcome!
+
+About the Dataset
+According to Wikipedia, an ultramarathon, also called ultra distance or ultra running, is any footrace longer than the traditional marathon length of 42.195 kilometers (26 mi 385 yd). Various distances are raced competitively, from the shortest common ultramarathon of 31 miles (50 km) to over 200 miles (320 km). 50k and 100k are both World Athletics record distances, but some 100 miles (160 km) races are among the oldest and most prestigious events, especially in North America.
+
+The data in this file is a large collection of ultramarathon race records registered between 1798 and 2022 (a period of well over two centuries) being therefore a formidable long term sample. All data was obtained from public websites.
+
+Despite the original data being of public domain, the race records, which originally contained the athletes' names, have been anonymized to comply with data protection laws and to preserve the athletes' privacy. However, a column Athlete ID has been created with a numerical ID representing each unique runner (so if Antonio Fernández participated in 5 races over different years, then the corresponding race records now hold his unique Athlete ID instead of his name). This way valuable information has been preserved.
+
+The dataset contains 7,461,226 ultramarathon race records from 1,641,168 unique athletes. The following columns (with data types) are included:
+
+Year of event (int64)
+Event dates (object)
+Event name (object)
+Event distance/length (object)
+Event number of finishers (int64)
+Athlete performance (object)
+Athlete club (object)
+Athlete country (object)
+Athlete year of birth (float64)
+Athlete gender (object)
+Athlete age category (object)
+Athlete average speed (object)
+Athlete ID (int64)
+The Event name column includes country location information that can be derived to a new column, and similarly seasonal information can be found in the Event dates column beyond the Year of event (these can be extracted with a bit of processing).
+
+The Event distance/length column describes the type of race, covering the most popular UM race distances and lengths, and some
+   
